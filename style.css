@@ -8,9 +8,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-/* body{
-    width:1920px;
-} */
+body{
+    overflow-x: hidden!important;
+}
 
 /* shared styles */
 .my{
@@ -244,6 +244,7 @@ line-height: 70px;
 /* resposive part */
 
 @media screen and (max-width:576px){
+    
     header, .feature-detail, .feature-card
     {
         width:100%;
@@ -273,8 +274,9 @@ line-height: 70px;
     }
     .card{
         width:90%;
+        height: auto;
         padding:10px 15px;
-        margin-left:50px;
+        margin-left:20px;
     }
    .btn{
     width:140px;
