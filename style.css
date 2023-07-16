@@ -21,9 +21,12 @@ margin-bottom:25px;
     font-size: 2.8rem;
     font-weight: 700;
 }
+.center{
+    text-align: center;
+}
 .para{
     color:#727272;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
@@ -120,10 +123,39 @@ text-align: center;
     text-align: left;
 }
 
+/* feature section start */
 
-
-
-
+.feature-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:140px;
+    margin-top:130px;
+}
+.feature-detail{
+    width:586px;
+    margin-bottom: 30px;
+}
+.feature-title h3{
+    width:468px;
+    margin-bottom: 24px;
+}
+.feature-card{
+    margin-top: 20px;
+}
+.card{
+    width:586px;
+    height: 171px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    padding:30px 25px;
+}
+.card h4{
+margin-bottom: 10px;
+}
 
 
 
