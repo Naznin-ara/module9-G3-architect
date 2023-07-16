@@ -92,6 +92,49 @@ text-align: center;
 }
 /* banner done */
 /* team section */
+.team-container{
+    display: flex;
+    width:100%;
+    /* margin:20px auto; */
+    gap:76px;
+    justify-content: center;
+    align-items: center;
+}
+.image-gallery{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+
+}
+.team-content{
+    max-width:537px;
+    height: auto;
+    
+}
+.team-content h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.team-content p{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* resposive part */
@@ -101,7 +144,7 @@ text-align: center;
         width:100%;
     }
 
-    nav{
+    nav, .team-container{
         flex-direction:column;
         padding:30px 25px;
         /* width:100%; */
@@ -113,4 +156,18 @@ text-align: center;
     .banner-img img{
         width:100%;
     }
+    .image-gallery{
+        grid-template-columns:1fr ;
+    }
+    .team-content{
+        text-align: center;
+        margin-top: 20px;
+    }
+   .btn{
+    width:140px;
+    height:60px;
+    font-size: 1.1rem;
+    padding:10px 15px;
+   }
+
 }
