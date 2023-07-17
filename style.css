@@ -23,7 +23,7 @@ margin-bottom:25px;
     font-weight: 700;
 }
 .center{
-    text-align: center;
+    text-align: center !important;
 }
 .para{
     color:#727272;
@@ -234,8 +234,34 @@ line-height: 70px;
 .fact-card p{
     font-size: 1.2rem;
 } 
+/* sponsors part */
+.sponsor-content{
+    margin-top: 90px;
+}
+.sponsors-logo{
+   max-width:1450px;
+    height: auto;
+    margin:30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+/* footer */
 
-
+.footer-div{
+    width:1440px;
+    height:100px;
+    background-color: #FFF4E7;
+    margin:130px auto;
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+.footer-div p{
+    margin:36px auto;
+    
+}
 
 
 
@@ -257,14 +283,14 @@ line-height: 70px;
 
 
 
-    nav, .team-container , .feature-container, .facts-card-div{
+    nav, .team-container , .feature-container, .facts-card-div , .sponsors-logo{
         flex-direction: column;
         padding: 0px;
         width: 90%;
-        gap: 20px;
+        gap: 25px;
         margin-left: 20px;
     }
-    .banner, .feature-image img,.team-content, .feature-title p,.feature-title h3 {
+    .banner,.footer-div p, .feature-image img,.team-content, .feature-title p,.feature-title h3 {
         width:80%;
         
     }
@@ -319,22 +345,27 @@ line-height: 70px;
     text-align: center;
     margin:10px auto;
 }
+.footer-div{
+    width:90%;
+    height: auto;
+    margin-top: 60px;
+}
 
 }
-@media screen and (max-width:960px) and (min-width:576px){
+@media screen and (max-width:1000px) and (min-width:576px){
     header,.card, .feature-detail
     {
         width:100%;
     }
 
-    nav, .team-container , .feature-container, .facts-card-div{
+    nav, .team-container , .feature-container, .facts-card-div, .sponsors-logo{
         flex-direction: column;
         padding: 0px;
         width: 90%;
-        gap: 20px;
+        gap: 25px;
         margin-left: 20px;
     }
-    .banner , .feature-title h3 ,.feature-title p {
+    .banner ,.footer-div p, .feature-title h3 ,.feature-title p {
         width:80%;
     }
     .banner-img img{
@@ -358,6 +389,7 @@ line-height: 70px;
         height: 120px;
         bottom:50px;
         padding:10px 15px;
+        margin-left: 20px;
     
     }
     .badge h1{
@@ -368,14 +400,24 @@ line-height: 70px;
     }
     .feature-card{
         width:80%;
+        margin-left: 35px;
     }
     .feature-image img{
-        margin-left: 20px;
-        width:80%;
+        margin-left: 130px;
+        width:70%;
+    }
+    .facts-content{
+        width:100%;
+        text-align: center;
     }
     .facts-content p{
         width:70%;
         text-align: center;
         margin:10px auto;
+    }
+    .footer-div{
+        width:90%;
+        height: auto;
+        margin-top: 60px;
     }
 }
